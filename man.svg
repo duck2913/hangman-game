@@ -1,0 +1,11 @@
+<svg width="110" height="256" viewBox="0 0 110 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="man">
+<circle id="head" cx="53" cy="30" r="27" stroke="#B5B5B5" stroke-width="6"/>
+<line id="upper-body" x1="55" y1="57" x2="55" y2="128" stroke="#AFAFAF" stroke-width="4"/>
+<line id="arm" x1="54.5838" y1="124.054" x2="2.58377" y2="168.054" stroke="#ABABAB" stroke-width="8"/>
+<line id="arm_2" x1="55.4626" y1="122.234" x2="107.463" y2="156.234" stroke="#A0A0A0" stroke-width="9"/>
+<line id="lower-body" x1="56.4998" y1="123.03" x2="55.4998" y2="205.03" stroke="#B0B0B0" stroke-width="5"/>
+<line id="leg" x1="58.6384" y1="206.007" x2="9.63836" y2="249.007" stroke="#C0C0C0" stroke-width="8"/>
+<line id="leg_2" x1="55.527" y1="205.578" x2="101.527" y2="253.578" stroke="#C0BFBF" stroke-width="7"/>
+</g>
+</svg>

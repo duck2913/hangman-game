@@ -1,0 +1,169 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+section[id] {
+  scroll-margin-top: 3rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #34495e;
+  color: white;
+}
+
+.man-svg {
+  -webkit-transform: translate(-8rem, -4.5rem);
+          transform: translate(-8rem, -4.5rem);
+}
+
+.game__container {
+  margin: 3rem 0;
+}
+
+.letters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.letters .letter {
+  font-size: 2rem;
+  width: 1.5rem;
+  border-bottom: 3px solid royalblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrong-letters__container {
+  position: absolute;
+  right: 30%;
+  top: 25%;
+  text-align: center;
+}
+
+.wrong-letters__container span {
+  font-size: 1.4rem;
+}
+
+.won,
+.loose {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 3rem;
+  background-color: red;
+  border-radius: 0.5rem;
+  text-align: center;
+  background-color: white;
+  color: #34495e;
+  font-size: 1.4rem;
+  display: none;
+}
+
+.won button,
+.loose button {
+  margin-top: 1rem;
+  border: none;
+  padding: 5px 1rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  background-color: #34495e;
+  color: white;
+}
+
+.notification {
+  position: absolute;
+  background-color: rgba(92, 92, 92, 0.733);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3rem;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.notification.show {
+  opacity: 1;
+}
+
+.man--part {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

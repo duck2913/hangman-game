@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- googlefont -->
+        <link rel="stylesheet" href="./main.css">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <h1>Hangman Game</h1>
+        <p>Find the hidden word, press a key to play</p>
+        <div class="game__container">
+            <svg
+                width="222"
+                height="396"
+                viewBox="0 0 222 396"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <g id="hanger">
+                    <line
+                        id="Line 1"
+                        x1="33"
+                        y1="2.5"
+                        x2="150"
+                        y2="2.5"
+                        stroke="white"
+                        stroke-width="3"
+                    />
+                    <line
+                        id="Line 2"
+                        x1="35.5"
+                        y1="5"
+                        x2="35.5"
+                        y2="396"
+                        stroke="white"
+                        stroke-width="3"
+                    />
+                    <line
+                        id="Line 3"
+                        y1="394.5"
+                        x2="67"
+                        y2="394.5"
+                        stroke="white"
+                        stroke-width="3"
+                    />
+                    <line
+                        id="Line 4"
+                        x1="150"
+                        y1="1"
+                        x2="150"
+                        y2="72"
+                        stroke="white"
+                        stroke-width="3"
+                    />
+                </g>
+            </svg>
+            <svg
+                width="110"
+                height="256"
+                viewBox="0 0 110 256"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="man-svg"
+            >
+                <g id="man">
+                    <circle
+                        id="head"
+                        cx="53"
+                        cy="30"
+                        r="27"
+                        stroke="#B5B5B5"
+                        stroke-width="4"
+                        class="man--part"
+                    />
+                    <line
+                        id="upper-body"
+                        x1="55"
+                        y1="57"
+                        class="man--part"
+                        x2="55"
+                        y2="128"
+                        stroke="#AFAFAF"
+                        stroke-width="4"
+                    />
+                    <line
+                        id="left-arm"
+                        x1="54.5838"
+                        y1="124.054"
+                        x2="2.58377"
+                        class="man--part"
+                        y2="168.054"
+                        stroke="#ABABAB"
+                        stroke-width="4"
+                    />
+                    <line
+                        id="right-arm"
+                        x1="55.4626"
+                        y1="122.234"
+                        class="man--part"
+                        x2="107.463"
+                        y2="156.234"
+                        stroke="#A0A0A0"
+                        stroke-width="4"
+                    />
+                    <line
+                        id="lower-body"
+                        x1="56.4998"
+                        y1="123.03"
+                        class="man--part"
+                        x2="55.4998"
+                        y2="205.03"
+                        stroke="#B0B0B0"
+                        stroke-width="4"
+                    />
+                    <line
+                        id="left-leg"
+                        x1="58.6384"
+                        class="man--part"
+                        y1="206.007"
+                        x2="9.63836"
+                        y2="249.007"
+                        stroke="#C0C0C0"
+                        stroke-width="4"
+                    />
+                    <line
+                        id="right-leg"
+                        x1="55.527"
+                        class="man--part"
+                        y1="205.578"
+                        x2="101.527"
+                        y2="253.578"
+                        stroke="#C0BFBF"
+                        stroke-width="4"
+                    />
+                </g>
+            </svg>
+        </div>
+        <div class="letters"></div>
+        <div class="wrong-letters__container">
+            <p>Wrong</p>
+            <span class="wrong-letters"></span>
+        </div>
+        <div class="won">
+            <p>You won👏👏! Want to play again?</p>
+            <button class="btn--again">Again</button>
+        </div>
+        <div class="loose">
+            <p>You loose🙄🙄! Want to play again?</p>
+            <button class="btn--again">Again</button>
+        </div>
+        <div class="notification">
+            <p>You already press this letter</p>
+        </div>
+    </body>
+</html>
