@@ -164,6 +164,6 @@ body {
 }
 
 .man--part {
-  display: none;
+  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */

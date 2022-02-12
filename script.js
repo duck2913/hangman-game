@@ -36,7 +36,14 @@ function checkPressTwice(keyCode) {
 }
 
 function drawHangman() {
-	manParts[wrongLetters.length - 1].style.display = "block";
+	const currentPart = manParts[wrongLetters.length - 1];
+	const pathLength = currentPart.getTotalLength();
+	gsap.set(currentPart, { strokeDashoffset: pathLength, strokeDasharray: pathLength });
+	gsap.fromTo(
+		currentPart,
+		{ strokeDashoffset: pathLength, opacity: 0 },
+		{ strokeDashoffset: 0, opacity: 1 },
+	);
 }
 
 window.addEventListener("keydown", function (e) {
